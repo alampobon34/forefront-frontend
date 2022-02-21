@@ -1,0 +1,19 @@
+/* .tag-header {
+  position: relative;
+}
+
+.tag-header:after {
+  display: block;
+  background-color: var(--main-color);
+  width: 150px;
+  height: 3px;
+  content: "";
+  position: absolute;
+  left: 6%;
+  top: 60%;
+  z-index: -1;
+} */
+
+/* .about-us {
+  margin-top: 30px;
+} */

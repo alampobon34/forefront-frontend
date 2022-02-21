@@ -1,0 +1,16 @@
+.mission-vision {
+  background-color: #f6f9fd;
+}
+
+.mission-title {
+  color: var(--text-blue);
+}
+
+.accordion-header {
+  color: var(--text-blue) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #249f99 !important;
+  box-shadow: 0 0 0 0.25rem rgba(36, 159, 153, 0.25);
+}

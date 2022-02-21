@@ -1,0 +1,9 @@
+.btn-outline-primary {
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
