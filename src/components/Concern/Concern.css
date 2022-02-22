@@ -1,0 +1,7 @@
+.concern {
+  border: 1px solid red;
+}
+
+.concern > a {
+  margin-top: 20px;
+}

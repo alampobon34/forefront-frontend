@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--footer-color);
+}
+
+.footer .info {
+  background-color: #000000 !important;
+  border-top: 3px solid var(--main-color);
+  line-height: 1;
+}
+
+.newsletter-btn {
+  background-color: var(--main-color);
+  color: #fff !important;
+  padding: 6px 25px;
+}
+
+.newsletter-btn:hover {
+  color: #fff !important;
+  background-color: var(--main-color);
+}
+
+.newsletter > input:focus {
+  outline: none !important;
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px var(--main-color);
+}
