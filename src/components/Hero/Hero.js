@@ -6,10 +6,10 @@ import slide3 from "./slide-3.jpg";
 import "./Hero.css";
 function Hero() {
   return (
-    <div className="container mb-4">
+    <div className="mb-4">
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src={slide1} alt="First slide" />
+          <img className="d-block hero-image" src={slide1} alt="First slide" />
 
           <Carousel.Caption>
             <h3>First slide label</h3>
@@ -18,7 +18,7 @@ function Hero() {
 
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slide2} alt="Second slide" />
+          <img className="d-block w-100 hero-image" src={slide2} alt="Second slide" />
 
           <Carousel.Caption>
             <h3>Second slide label</h3>
@@ -26,7 +26,7 @@ function Hero() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slide3} alt="Third slide" />
+          <img className="d-block w-100 hero-image" src={slide3} alt="Third slide" />
 
           <Carousel.Caption>
             <h3>Third slide label</h3>

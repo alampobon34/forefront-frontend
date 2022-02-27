@@ -1,3 +1,6 @@
+.navbar{
+  padding: 15px 0;
+}
 .navbar-nav .nav-link {
   border-bottom: 5px solid transparent;
   margin-left: 10px;

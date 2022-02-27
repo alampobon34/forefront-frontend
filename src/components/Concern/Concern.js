@@ -11,7 +11,7 @@ function Concern() {
     <div className="container section mb-4">
       {/* <h4 className="tag-header">About</h4> */}
 
-      <div data-aos="fade-up" data-aos-duration="2000">
+      <div data-aos="zoom-in" data-aos-duration="2000">
         <h3>OUR CONCERN</h3>
         <hr className="hr" />
 

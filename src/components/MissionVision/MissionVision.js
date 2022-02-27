@@ -22,7 +22,7 @@ function MissionVision() {
             </Figure>
           </div>
 
-          <div className="col-lg-5 col-md-6">
+          <div className="col-lg-5 col-md-6 mission">
             <div className="container">
               <h3 className="mt-5 mission-title">
                 Our <strong>Mission</strong> & <strong>Vision</strong>
