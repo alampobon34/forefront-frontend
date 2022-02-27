@@ -1,0 +1,20 @@
+
+.jumbotron-image {
+    background-image: url("joinNow.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:120px 0px;
+    overflow: hidden;
+    display: block;
+  }
+
+.joinNow{
+    color: #fff !important;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+.joinNow-title{
+    font-weight: bold;
+}

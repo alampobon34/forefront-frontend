@@ -1,0 +1,5 @@
+
+.hall-of-fame-row .column img:hover{
+    cursor:pointer;
+    filter: grayscale(1) brightness(0.5);
+}
