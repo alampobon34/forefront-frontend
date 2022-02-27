@@ -2,14 +2,20 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
+
 import { Link } from "react-router-dom";
 import logo from "./demo.png";
 import "./Header1.css";
 function Header1() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="sticky-top">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="light"
+        variant="light"
+        className="sticky-top"
+      >
         <Container>
           <Link to="/">
             <Navbar.Brand>
