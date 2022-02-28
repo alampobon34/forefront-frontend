@@ -1,33 +1,39 @@
 import React, { useState } from "react";
+import { createContact } from "../../api/api.js";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import "./Contact.css";
 function Contact() {
+  const url = "http://127.0.0.1:8000";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const history = useNavigate();
+  const [error, setError] = useState([]);
 
-  async function addContact() {
-    let formField = new FormData();
-    formField.append("name", name);
-    formField.append("email", email);
-    formField.append("subject", subject);
-    formField.append("message", message);
+  // const history = useNavigate();
 
-    let result = await fetch("http://127.0.0.1:8000/api/contact", {
-      method: "POST",
-      body: JSON.stringify(formField),
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+  const addContact = (e) => {
+    e.preventDefault();
+    console.log(name, email, subject, message);
+
+    const contact = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    createContact(contact).then((res) => {
+      if (res.data.status === 200) {
+        alert(res.data.success);
+        window.location.href = "/";
+      } else {
+        // alert(res.data.status);
+        console.log(res.data.error);
+        setError(res.data.error);
+      }
     });
-
-    result = await result.json();
-    console.log(result);
-  }
+  };
 
   return (
     <>
@@ -81,6 +87,9 @@ function Contact() {
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Your Name"
                     />
+                    <small id="emailHelp" class="form-text text-danger">
+                      {error.name}
+                    </small>
                   </div>
                   <div className="col-md-6 form-group mt-3 mt-md-0">
                     <input
@@ -90,6 +99,9 @@ function Contact() {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Your Email"
                     />
+                    <small id="emailHelp" class="form-text text-danger">
+                      {error.email}
+                    </small>
                   </div>
                 </div>
                 <div className="form-group mt-3">
@@ -100,6 +112,9 @@ function Contact() {
                     onChange={(e) => setSubject(e.target.value)}
                     placeholder="Subject"
                   />
+                  <small id="emailHelp" class="form-text text-danger">
+                    {error.subject}
+                  </small>
                 </div>
                 <div className="form-group mt-3">
                   <textarea
@@ -109,13 +124,14 @@ function Contact() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
+                  <small id="emailHelp" class="form-text text-danger">
+                    {error.message}
+                  </small>
                 </div>
                 <div className="my-3">
                   <div className="loading">Loading</div>
                   <div className="error-message" />
-                  <div className="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div className="sent-message">asasdsad</div>
                 </div>
                 <div className="text-center">
                   <button type="submit" onClick={addContact}>
