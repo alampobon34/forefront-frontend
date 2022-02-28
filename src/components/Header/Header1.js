@@ -32,10 +32,14 @@ function Header1() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Link to="/about" className="nav-link text-dark">
+              <Link to="/about" className="nav-link text-dark" href="#about">
                 About us
               </Link>
-              <Link to="/about" className="nav-link text-dark">
+              <Link
+                to="#concern"
+                className="nav-link text-dark"
+                href="#concern"
+              >
                 Concerns
               </Link>
               <Link to="/about" className="nav-link text-dark">
@@ -44,7 +48,7 @@ function Header1() {
               <Link to="/about" className="nav-link text-dark">
                 Contact
               </Link>
-              <Link to="/about" className="nav-link text-dark join-team">
+              <Link to="/join-now" className="nav-link text-dark join-team">
                 Join Our Team
               </Link>
             </Nav>

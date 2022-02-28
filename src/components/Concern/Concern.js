@@ -6,9 +6,7 @@ import Figure from "react-bootstrap/Figure";
 import "./Concern.css";
 function Concern() {
   return (
-
-
-    <div className="container section mb-4">
+    <div className="container section mb-4" id="concern">
       {/* <h4 className="tag-header">About</h4> */}
 
       <div data-aos="zoom-in" data-aos-duration="2000">
@@ -54,11 +52,7 @@ function Concern() {
           </div>
         </div>
       </div>
-
     </div>
-
-
-
   );
 }
 
