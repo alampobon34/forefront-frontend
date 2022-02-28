@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function AdminSidebar() {
   return (
     <>
@@ -12,12 +12,12 @@ function AdminSidebar() {
             <div className="sb-sidenav-menu">
               <div className="nav">
                 <div className="sb-sidenav-menu-heading">Core</div>
-                <a className="nav-link" href="index.html">
+                <Link className="nav-link" to="/admin/dashboard">
                   <div className="sb-nav-link-icon">
                     <i className="fas fa-tachometer-alt" />
                   </div>
                   Dashboard
-                </a>
+                </Link>
                 <div className="sb-sidenav-menu-heading">Interface</div>
                 <a
                   className="nav-link collapsed"
@@ -28,9 +28,9 @@ function AdminSidebar() {
                   aria-controls="collapseLayouts"
                 >
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-columns" />
+                    <i className="fas fa-table" />
                   </div>
-                  Layouts
+                  Tables
                   <div className="sb-sidenav-collapse-arrow">
                     <i className="fas fa-angle-down" />
                   </div>
@@ -42,11 +42,11 @@ function AdminSidebar() {
                   data-bs-parent="#sidenavAccordion"
                 >
                   <nav className="sb-sidenav-menu-nested nav">
-                    <a className="nav-link" href="layout-static.html">
-                      Static Navigation
-                    </a>
-                    <a className="nav-link" href="layout-sidenav-light.html">
-                      Light Sidenav
+                    <Link className="nav-link" to="/admin/contact-dashboard">
+                      Contact
+                    </Link>
+                    <a className="nav-link" href="/admin/dashboard">
+                      Join Now
                     </a>
                   </nav>
                 </div>

@@ -10,6 +10,7 @@ import About from "./pages/About/About";
 import JoinNow from "./pages/JoinNow/JoinNow";
 // import Footer from "./components/Footer/Footer.js";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
+import ContactDashboard from "./pages/Admin/ContactDashboard";
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/join-now" element={<JoinNow />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/contact-dashboard" element={<ContactDashboard />} />
       </Routes>
       {/* <Footer /> */}
     </div>
