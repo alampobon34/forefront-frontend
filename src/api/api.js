@@ -5,3 +5,7 @@ const url = "http://127.0.0.1:8000";
 export const createContact = (contact) => {
   return axios.post(`${url}/api/contact`, contact);
 };
+
+export const createJoinNow = (joinNow) => {
+  return axios.post(`${url}/api/join-now`, joinNow);
+};
